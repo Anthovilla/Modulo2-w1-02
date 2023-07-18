@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account</title>
+  </head>
+  <body>
+    <h1>Conti Correnti</h1>
+
+    <h1>Son Account</h1>
+    <form onsubmit="handleFormSubmit(event)">
+      <label for="sonDeposit">Versamento:</label>
+      <input type="number" id="sonDeposit" step="0.01" required />
+      <br />
+      <label for="sonWithdraw">Prelievo:</label>
+      <input type="number" id="sonWithdraw" step="0.01" required />
+      <br />
+      <button type="submit">Esegui</button>
+    </form>
+    <p>Saldo attuale: <span id="sonSaldo">0</span></p>
+
+    <h1>Mother Account</h1>
+    <form onsubmit="handleFormSubmit(event)">
+      <label for="motherDeposit">Versamento:</label>
+      <input type="number" id="motherDeposit" step="0.01" required />
+      <br />
+      <label for="motherWithdraw">Prelievo:</label>
+      <input type="number" id="motherWithdraw" step="0.01" required />
+      <br />
+      <button type="submit">Esegui</button>
+    </form>
+    <p>Saldo attuale: <span id="motherSaldo">0</span></p>
+
+    <!-- <div id="son-account">
+      <h2>Son Account</h2>
+      <button onclick="">Versamento</button>
+      <button onclick="">Prelievo</button>
+      <p id="son-saldo"></p>
+    </div>
+
+    <div>
+      <h2>Mother Account</h2>
+      <button onclick="">Versamento</button>
+      <button onclick="">Prelievo</button>
+      <button onclick="">Aggiungi Interesse</button>
+      <p id="mother-saldo"></p>
+    </div> -->
+
+    <script src="work.js"></script>
+  </body>
+</html>
